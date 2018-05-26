@@ -1,4 +1,5 @@
 import re
+from things.Enemy import Enemy
 
 string_to_match = "'I said' - that's what she said."
 some_string = re.sub('[A-Z]', '', string_to_match)
@@ -59,3 +60,8 @@ greet_all("Ayy", "Lmao", "The Third")
 isChecked = 'yes' if True else 'true'
 
 print(isChecked)
+
+enemy = Enemy(atkl=60, atkh=80, age=23)
+atk = enemy.get_atkh()
+enemy.takeHit(atk)
+print(enemy.get_hp())
