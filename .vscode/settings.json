@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "${workspaceFolder}/dvenv/bin/python"
+  "python.pythonPath": "${workspaceFolder}/dvenv/bin/python",
+  "python.linting.pylintArgs": ["--load-plugins=pylint_django"]
 }
